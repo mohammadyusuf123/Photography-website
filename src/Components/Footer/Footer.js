@@ -9,7 +9,7 @@ const Footer = () => {
                 <div>
                     <img src={logo} alt="" />
                 </div>
-            <table>
+            <>
             <ul>
               <li>About Us</li>
               <li>Success</li>
@@ -17,7 +17,7 @@ const Footer = () => {
               <li>Terms&Condition</li>
                 <li>Help</li>
             </ul> 
-          </table>
+          </>
           <div>
             <h6 class="mt-3">Nijol Creative Photography</h6>
           <h6 class="ms-3">@ Copyright 2022</h6>

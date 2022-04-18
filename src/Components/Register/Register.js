@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -6,6 +6,7 @@ import GoogleSingIn from '../GoogleSingIn/GoogleSingIn';
 import Loading from '../Loading/Loading';
 
 const Register = () => {
+    const[error1,setError]=useState('')
     const [
         createUserWithEmailAndPassword,
         user,
@@ -21,6 +22,15 @@ const Register = () => {
         const email=event.target.email.value;
         const password=event.target.password.value;
         const confirmPassword=event.target.confirmPassword.value;
+        if(password!==confirmPassword){
+            setError('You Password did not match');
+            return;
+           
+        }
+        if(password.length<6){
+            setError("Password must be 6 Character")
+            return;
+        }
         createUserWithEmailAndPassword(email,password)
 
     }
@@ -52,6 +62,7 @@ const Register = () => {
           <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
           <input name='confirmPassword' type="password" class="form-control"  />
         </div>
+        <p className='text-danger'>{error1}</p>
         <button type="submit" class="btn btn-primary w-100 mt-3">Register Now</button>
         <GoogleSingIn></GoogleSingIn>
         <hr class="bg-secondary"/>
