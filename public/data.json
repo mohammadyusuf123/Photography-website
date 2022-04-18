@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "categories": "Wedding Photography",
+        "description": "Probably the best computer shop in Dhaka.Super friendly staff!They have a lot of collection to see.Everyone should visit this shop.",
+
+        "image": "https://i.ibb.co/VMYB5KN/widding.jpg"
+        },
+        {
+            "id": 2,
+            "categories": "Sports Photography",
+            "description": "Probably the best computer shop in Dhaka.Super friendly staff!They have a lot of collection to see.Everyone should visit this shop.",
+            "image": "https://i.ibb.co/q0cQ6wM/sports.jpg"
+            },
+            {
+                "id": 3,
+                "categories": "Fashion Photography",
+                "description": "Probably the best computer shop in Dhaka.Super friendly staff!They have a lot of collection to see.Everyone should visit this shop.",
+              
+                "image": "https://i.ibb.co/gFG4SH8/fashion.jpg"
+                },
+                {
+                    "id": 4,
+                    "categories": "Baby Photography",
+                    "description": "Probably the best computer shop in Dhaka.Super friendly staff!They have a lot of collection to see.Everyone should visit this shop.",
+                   
+                    "image": "https://i.ibb.co/WvmJJWp/baby.jpg"
+                    },
+                    {
+                        "id": 5,
+                        "categories": "E-Commerce Photography",
+                        "description": "Probably the best computer shop in Dhaka.Super friendly staff!They have a lot of collection to see.Everyone should visit this shop.",
+                      
+                        "image": "https://i.ibb.co/t3JQZMt/comercial.jpg"
+                        },
+                        {
+                            "id": 6,
+                            "categories": "Drone Photography",
+                            "description": "Probably the best computer shop in Dhaka.Super friendly staff!They have a lot of collection to see.Everyone should visit this shop.",
+                          
+                            "image": "https://i.ibb.co/NL15kBJ/drone.jpg"
+                            }]
