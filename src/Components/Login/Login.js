@@ -1,10 +1,12 @@
-import React from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { async } from '@firebase/util';
+import'./Login.css'
+import React, { useRef } from 'react';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import google from'../../images/google.webp'
 import GoogleSingIn from '../GoogleSingIn/GoogleSingIn';
 const Login = () => {
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
     const navigate=useNavigate()
     const location=useLocation()
     let from = location.state?.from?.pathname || "/";
@@ -20,6 +22,12 @@ const Login = () => {
         const password=event.target.password.value;
         signInWithEmailAndPassword(email,password)
 
+    }
+    const emailRef = useRef('');
+    const sendMail=async()=>{
+        const email=emailRef.current.value;
+        await sendPasswordResetEmail(email)
+        alert('Sent email');
     }
     const handleRegister=()=>{
         navigate(from, { replace: true })
@@ -41,7 +49,7 @@ const Login = () => {
           <input name='password' type="password" class="form-control" id="exampleInputPassword1"/>
         </div>
           <div class="text-primary justify-content-between mt-3 ms-5">
-            <h6>Forgotten password?</h6>
+            <h6 className='send-mail' onClick={sendMail}>Forgotten password?</h6>
           </div>
         <button type="submit" class="btn btn-primary w-100 mt-3">Log In</button>
         <GoogleSingIn></GoogleSingIn>

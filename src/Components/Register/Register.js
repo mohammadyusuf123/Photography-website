@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import GoogleSingIn from '../GoogleSingIn/GoogleSingIn';
 
 const Register = () => {
     const [
@@ -41,7 +42,7 @@ const Register = () => {
           <input name='confirmPassword' type="password" class="form-control"  />
         </div>
         <button type="submit" class="btn btn-primary w-100 mt-3">Register Now</button>
-
+        <GoogleSingIn></GoogleSingIn>
         <hr class="bg-secondary"/>
         <div id="passwordHelpBlock" class="form-text text-success">
             Already have an account?

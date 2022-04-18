@@ -18,7 +18,7 @@ const Categories = () => {
            }
            {
                 window.location.pathname!== '/categories' && <Button onClick={()=>{navigate('/categories')
-            }} className='w-50 mx-auto btn-info text-light '>See All Reviews</Button>
+            }} className='btn btn-info text-light w-25 mx-auto mt-4 '>See All Categories</Button>
            }
 
         
