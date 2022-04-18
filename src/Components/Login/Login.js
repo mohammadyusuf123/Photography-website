@@ -5,6 +5,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import GoogleSingIn from '../GoogleSingIn/GoogleSingIn';
+import Loading from '../Loading/Loading';
 const Login = () => {
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
     const navigate=useNavigate()
@@ -16,6 +17,7 @@ const Login = () => {
        loading,
        error,
      ] = useSignInWithEmailAndPassword(auth);
+     
      const handleSubmit=(event)=>{
         event.preventDefault()
         const email=event.target.email.value;
@@ -35,6 +37,17 @@ const Login = () => {
     if(user){
         navigate('/')
     }
+    if(loading){
+        return<Loading></Loading>
+    }
+   
+    if (error) {
+        return (
+          <div>
+            <p className='text-danger'>Error: {error.message}</p>
+          </div>
+        );
+      }
   
     return (
         <div>
@@ -48,6 +61,7 @@ const Login = () => {
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input name='password' type="password" class="form-control" id="exampleInputPassword1"/>
         </div>
+    
           <div class="text-primary justify-content-between mt-3 ms-5">
             <h6 className='send-mail' onClick={sendMail}>Forgotten password?</h6>
           </div>

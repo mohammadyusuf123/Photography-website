@@ -3,6 +3,7 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import google from'../../images/google.webp'
+import Loading from '../Loading/Loading';
 
 const GoogleSingIn = () => {
     const navigate=useNavigate()
@@ -15,7 +16,7 @@ const GoogleSingIn = () => {
         );
       }
       if (loading) {
-        return <p>Loading...</p>;
+        return <Loading></Loading>
       }
       if (user) {
         return (

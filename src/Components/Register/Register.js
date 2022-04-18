@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import GoogleSingIn from '../GoogleSingIn/GoogleSingIn';
+import Loading from '../Loading/Loading';
 
 const Register = () => {
     const [
@@ -10,7 +11,7 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
     const navigate=useNavigate()
     const handleLogIn=()=>{
         navigate('/login')
@@ -26,6 +27,16 @@ const Register = () => {
     if(user){
         navigate('/')
     }
+    if(loading){
+       return<Loading></Loading>
+    }
+    if (error) {
+        return (
+          <div>
+            <p className='text-danger'>Error: {error.message}</p>
+          </div>
+        );
+      }
     return (
         <div>
             <form onSubmit={handleSubmit} class="w-25 mx-auto shadow-lg p-3 mb-5 mt-5 bg-body rounded">
