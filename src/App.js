@@ -11,6 +11,7 @@ import Categories from './Components/Categories/Categories';
 import Booking from './Components/Booking/Booking';
 import Register from './Components/Register/Register';
 import RequireAuth from './Components/ RequireAuth/ RequireAuth';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
+      <Footer></Footer>
       </div>
    
   );

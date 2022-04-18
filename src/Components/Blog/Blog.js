@@ -48,9 +48,9 @@ const Blog = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
-          <Accordion.Header>Accordion Item #3</Accordion.Header>
+          <Accordion.Header>Why are you using firebase?What other options do you have to implement authentication?</Accordion.Header>
           <Accordion.Body>
-    
+    I use Firebase because of Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more.
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
