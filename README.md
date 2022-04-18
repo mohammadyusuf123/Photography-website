@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+# About This Project
+We create artworks, concepts, photography & choreography Who We Are? Every person has moments that they want to remember forever. Such moment are not only captured, but used to create the most beautiful, artistic, and fulfilling concepts. They are immortalized into photographic artworks, choreography, and impressions that will turn heads for ever. At NijolCreative Photography we understand this rule that makes the difference. As the leading photography agency in Bangladesh, we have spent every single moments of our time creating and not capturing, building and not putting, designing and not setting, magical moments that have won over many hearts and left us with a powerful experience to make our every life we touch satisfied and happy. Abu Sufian Nilove the CEO and the rest of our team have shown high style dedication to the path of developing new ideas and learning new concept. Additionally, they have carved out a name for the “best professional photographer in the business.” What Makes Us Different? Our team of professionals at NijolCreative Photography listens to our customers. We create photography by making a suitable and safe environment that allows the client to express their inner self. We understand how to create and capture the right moment the right way. Our approach to customer satisfaction is based on listening to our clients and working through projects together as partners. This has allowed us to foster some of the best long term relationship with our client and assist them to capture and preserve the most meaningful moments of their lives. We have a passion for photography and everything that comes with it. Our team of expert photographers will tell your wedding stories every second across the clock in a manner that they will be cherished for years to come. We will design the most excellent crafts, arts, and graphics in Videography, Digital Branding, and Online Advertisement that will boost your success. Indeed at Nijol Creative we offer the best way to tell the story of your life and your brand. Today, our clients come from many places. From Bangladesh, India, all through to the US our impact has changed the world. We are offering professional photographic education intended to increase skilled and qualified photographers in the country. With our new branches opening their doors in India and the US, don’t be left behind. Choose Nijol Creative Photography and make the leap of satisfaction, joy, and success in telling a unique, original, and authentic story. Our joy is our passion to photography, shooting, and capturing moments and how they change your life and make all of us joyous and happy. Why NijolCreative? We do what we are best at. We photograph memories, create stories and show you the beauty you would not see otherwise. Professionally trained photographers Over 10 years combined experience. We create art and crafts with photography We offer 24/7 support and services We are affordable and budget friendly We keep our clients happy and satisfied. What We DO? We offer various photographic services. Here are some of the most fundamental ones that we will leave you with. Wedding Photography/ Videography Product Photography/ Videography Fashion Photography/ Videography Commercial Photography/ Videography Our Motto Let’s walk together, run after excellence, maintaining premium quality, and tell the story that lives forever, with photos! So, here we are, at your service, now and always.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Repositories Link
+https://github.com/programming-hero-web-course-4/independent-service-provider-zayn778
 
-## Available Scripts
+### `Live site Link`
+https://assignment-10-75ebb.web.app/
 
-In the project directory, you can run:
+### `Made By `
+1.React
+2.Bootstrap
+3.Firebase
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
