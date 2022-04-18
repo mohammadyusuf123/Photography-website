@@ -36,8 +36,7 @@ const Register = () => {
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input name='password' type="password" class="form-control"  required id="exampleInputPassword1"/>
         </div>
-        
-          <div class="mb-3">
+          <div class="pb-3">
           <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
           <input name='confirmPassword' type="password" class="form-control"  />
         </div>

@@ -1,12 +1,13 @@
 import React from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-
+import google from'../../images/google.webp'
 const Login = () => {
     const navigate=useNavigate()
     const location=useLocation()
     let from = location.state?.from?.pathname || "/";
+    const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
    const [
        signInWithEmailAndPassword,
        user,
@@ -38,14 +39,12 @@ const Login = () => {
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input name='password' type="password" class="form-control" id="exampleInputPassword1"/>
-        </div><div id="passwordHelpBlock" class="form-text">
-            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-          </div>
+        </div>
           <div class="text-primary justify-content-between mt-3 ms-5">
             <h6>Forgotten password?</h6>
           </div>
         <button type="submit" class="btn btn-primary w-100 mt-3">Log In</button>
-
+        <button type="submit" class="btn btn-light w-100 mt-3"><img width='70px' height='35px' src={google}/>Continue with Google</button>
         <hr class="bg-secondary"/>
         <div id="passwordHelpBlock" class="form-text text-success">
             New to Nijol-Creative-Photography?
